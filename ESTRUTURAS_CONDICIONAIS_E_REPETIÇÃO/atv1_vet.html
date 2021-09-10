@@ -1,0 +1,35 @@
+<!-- 1. Construa um script para mostrar no corpo do documento de uma página web o DIA DA
+SEMANA. Utilize o seguinte formato: “Hoje é domingo”, “Hoje é segunda-feira”, “Hoje é
+terça-feira”, “Hoje é quarta-feira”, ..., “Hoje é sábado”.
+OBS: Resolva este problema utilizando duas abordagens diferentes:
+a) Utilizar Array
+b) Utilizar a instrução condicional switch
+DICA: Pesquise no Google como obter DATAS em JavaScript. Depois, pesquise como obter o
+dia da semana. Agora o resto é com você. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+        var data = new Date(); 
+        var dia_sem = data.getDay();
+        vet_leg_dia_sem = ["domingo","segunda","terça","quarta","quinta","sexta","sabado"];
+        
+
+        document.write(`hoje é ${vet_leg_dia_sem[dia_sem]}<br>`);
+
+    </script>
+
+
+    </script>
+    <title>Aula 2 Java Script</title>
+</head>
+<body>
+    
+</body>
+</html>

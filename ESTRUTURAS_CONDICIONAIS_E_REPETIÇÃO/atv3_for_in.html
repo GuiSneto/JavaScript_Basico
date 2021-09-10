@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tabela criada com JS</title>
+</head>
+<body>
+  <div id="mytable"></div>
+
+</body>
+<script>
+
+
+const codigo = ["P2","AP","POO1","FBD","JSB"];
+const disciplina = ["Projeto Sistema Web MVC e SQL","Algoritmos e Programação","Programação Orientada a Objetos 1","Fundamentos de Banco de Dados","JavaScript Básico"];
+  
+
+
+document.write(`<table align='center' border='1' width='50%'>
+    <thead>
+      <tr>
+        <th>Idade</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+  `)
+
+  for (var i in codigo){
+    
+    document.write(`<tr>
+                        <td>${codigo[i]}</td>
+                        <td>${disciplina[i]}</td>
+                    </tr>`)
+
+}  
+document.write(`
+</tbody>
+</table>`)
+      </script> 
+</html>
